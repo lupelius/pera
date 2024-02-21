@@ -1,6 +1,25 @@
 import Image from "next/image";
 
 export default function Home() {
+  /*
+    <Image
+              className="ml-8"
+              src="/pera.png"
+              alt="Pera Lisbon Logo"
+              width={120}
+              height={120}
+              priority
+            />
+  */
+  const img = 
+    <Image
+      className="ml-3"
+      src="/pera.png"
+      alt="Pera Lisbon Logo"
+      width={160}
+      height={160}
+      priority
+    />
   const pe = (url, title, paragraph) => <a
     href={url}
     className="group rounded-lg border border-transparent px-5 py-4 transition-colors"
@@ -12,14 +31,7 @@ export default function Home() {
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <Image
-                className="ml-8"
-                src="/pera.png"
-                alt="Pera Lisbon Logo"
-                width={120}
-                height={120}
-                priority
-              />
+               {img}
             </div>
             <div class="flip-card-back">
                 <p class="title">{title}</p>
@@ -32,14 +44,8 @@ export default function Home() {
         <div class="flip-card">
           <div class="flip-card-inner">
               <div class="flip-card-front">
-                <Image
-                  className="ml-8"
-                  src="/pera.png"
-                  alt="Pera Lisbon Logo"
-                  width={120}
-                  height={120}
-                  priority
-                />
+                {img}
+
               </div>
               <div class="flip-card-back">
                   <p class="title">{title}</p>
@@ -53,14 +59,7 @@ export default function Home() {
     <div class="flip-card mt-8">
       <div class="flip-card-inner">
           <div class="flip-card-front">
-            <Image
-              className="ml-8"
-              src="/pera.png"
-              alt="Pera Lisbon Logo"
-              width={120}
-              height={120}
-              priority
-            />
+            {img}
           </div>
           <div class="flip-card-back">
               <p class="title">{title}</p>
@@ -78,14 +77,7 @@ export default function Home() {
     <div class="flip-card">
       <div class="flip-card-inner">
           <div class="flip-card-front">
-            <Image
-              className="ml-8"
-              src="/pera.png"
-              alt="Pera Lisbon Logo"
-              width={120}
-              height={120}
-              priority
-            />
+            {img}
           </div>
           <div class="flip-card-back">
               <p class="title">{title}</p>
@@ -94,6 +86,7 @@ export default function Home() {
       </div>
     </div>
   </a>
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
