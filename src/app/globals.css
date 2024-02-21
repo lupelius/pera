@@ -13,9 +13,9 @@ main {
 }
 
 .geologica-italic {
-  font-family: "Geologica", sans-serif;
+  font-family: "Open sans", "Geologica", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
   font-variation-settings:
     "slnt" 0,
@@ -45,6 +45,22 @@ main {
     "slnt" 0,
     "CRSV" 0,
     "SHRP" 0;
+}
+.open-sans-normal {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.open-sans-bold {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -90,7 +106,7 @@ body {
 
 .title {
   font-size: 1.5em;
-  font-weight: 900;
+  font-weight: 300;
   text-align: center;
   margin: 0;
 }
